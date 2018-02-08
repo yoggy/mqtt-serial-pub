@@ -1,0 +1,18 @@
+// Wifi config
+char *wifi_ssid      = "SSID";
+char *wifi_password  = "password";
+char *mqtt_server    = "iot.eclipse.org";
+int  mqtt_port       = 1883;
+
+char *mqtt_client_id = "mqtt-serial-pub-0001";
+bool mqtt_use_auth   = false;
+char *mqtt_username  = "username";
+char *mqtt_password  = "password";
+
+//
+// mqtt-serial-pub publishes messages to the following topics.
+//
+//    mqtt_base_topic + "recv" : read data from UART
+//    mqtt_base_topic + "ping" : ping message (every 60 seconds)
+//
+char *mqtt_base_topic = "example/topic/";
